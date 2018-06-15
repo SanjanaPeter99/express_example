@@ -1,0 +1,24 @@
+Reference Site : https://shapeshed.com/creating-a-basic-site-with-node-and-express/
+
+# We assume that node and npm is installed.
+
+1. Install express globally (-g)
+   npm install -g express-generator
+2. Create an express project
+   express -c stylus express_example : where, c - using stylus for css or just express <project_name>
+3. Move to project directory and install npm 
+   cd express_example && npm install
+4. Boot the application 
+   DEBUG=express_example:* npm start
+   Will be working on this port =  http://127.0.0.1:3000 
+   You can change you port in file www
+   #var port = normalizePort(process.env.PORT || '3000');
+5. Install nodemon so you wont have to restart your application each time you make any changes.
+   When application is started with nodemon, it automatically reload your application on the fly.
+   Install -> npm install -g nodemon
+   Start   -> DEBUG=express_example:* nodemon
+   
+   
+   
+
+   
